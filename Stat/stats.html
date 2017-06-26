@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .info table {
+                font-family: arial, sans-serif;
+                font-size: 15px;
+                border-collapse: collapse;
+                width: 50%;
+            }
+        
+        .info th:nth-child(1) {
+            width: 40%;
+        }
+        
+        .info th:nth-child(n+2) {
+            width: 10%;
+        }
+        
+        .info td, th {
+            border: 1px solid #dddddd;
+            padding: 6px 4px;
+            text-align: center;
+        }
+        
+        .info td:nth-child(1) {
+            text-align: left;
+        }
+        
+        .stats table {
+            font-family: arial, sans-serif;
+            font-size: 12px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .stats th:nth-child(1) {
+            width: 3%;
+        }
+        .stats th:nth-child(2) {
+            width: 16.5%
+        }
+        .stats th:nth-child(n+3) {
+            width: 4.5%
+        }
+        
+        .stats td, th {
+            border: 1px solid #dddddd;
+            padding: 6px 4px;
+            height: 12px;
+            text-align: center;
+        }
+        
+        .stats td:nth-child(2) {
+            text-align: left;
+            padding: 6px 4px;
+        }
+        
+            </style>
+    </head>
+    <body>
+        <h2>#TITLE#</h2>
+        <p>#TIME#</p>
+        <div class = "info">
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>OT</th>
+                    <th>Score</th>
+                </tr>
+                #INFO_ITEMS#
+            </table>
+        </div>
+        
+        <br />
+        
+        <div class = "stats">
+            <table>
+                <tr class="heading">
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Min</th>
+                    <th>2PT</th>
+                    <th>2PT%</th>
+                    <th>3PT</th>
+                    <th>3PT%</th>
+                    <th>FG</th>
+                    <th>FT</th>
+                    <th>FT%</th>
+                    <th>DB</th>
+                    <th>OB</th>
+                    <th>REB</th>
+                    <th>AST</th>
+                    <th>ST</th>
+                    <th>BS</th>
+                    <th>TO</th>
+                    <th>PF</th>
+                    <th>FD</th>
+                    <th>PTS</th>
+                </tr>
+                #STAT_ITEMS#
+            </table>
+        </div>
+    </body>
+</html>
