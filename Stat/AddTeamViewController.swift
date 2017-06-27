@@ -8,11 +8,12 @@
 
 import UIKit
 
-class AddTeamViewController: UIViewController {
+class AddTeamViewController: UIViewController, UITextFieldDelegate {
     
     var teamTableVC: TeamTableViewController?
 
     @IBOutlet weak var tfName: UITextField!
+	@IBOutlet weak var btAdd: UIButton!
     
     @IBAction func btAddTeam(_ sender: UIButton) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -41,5 +42,10 @@ class AddTeamViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		btAdd.sendActions(for: .touchUpInside)
+		return true
+	}
 
 }

@@ -343,12 +343,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5Va-KI-LDk" id="rdO-Bu-3sR"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="btAdd" destination="aZO-Ug-zMM" id="NCO-Ox-ZNL"/>
                         <outlet property="tfName" destination="tlh-Nh-lhb" id="MeT-Sf-Yos"/>
                     </connections>
                 </viewController>
