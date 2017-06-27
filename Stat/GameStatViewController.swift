@@ -273,18 +273,12 @@ class GameStatViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // Two, Three Pts made/attempt
     @IBAction func singleTapImageCourt(_ sender: UITapGestureRecognizer) {
-//        sender.require(toFail: doubleTapGestureRecognizer)
         if sender.state == .ended {
             viewAnchor.center = sender.location(in: view)
             performSegue(withIdentifier: "Pop Up Segue", sender: sender)
         }
     }
 
-//    @IBAction func doubleTapImageCourt(_ sender: UITapGestureRecognizer) {
-//        if sender.state == .ended {
-//            shoot(point: sender.location(in: imageCourt), isMade: true)
-//        }
-//    }
     
     @IBAction func stepperMinutesChanged(_ sender: UIStepper) {
         if let (home,player) = self.selectedPlayer {
@@ -299,7 +293,6 @@ class GameStatViewController: UIViewController, UITableViewDataSource, UITableVi
             switch sender.currentTitle! {
             case "FT Made":
                 gamePlayers!.madeFT(player: player, isHome: home, step: !btRemove.isSelected)
-//                updateScore(quarter: quarter, score: 1 * (btRemove.isSelected ? -1 : 1), isHome: home)
             case "FT Attempt":
                 gamePlayers!.attemptFT(player: player, isHome: home, step: !btRemove.isSelected)
             case "DR":
@@ -356,10 +349,7 @@ class GameStatViewController: UIViewController, UITableViewDataSource, UITableVi
         isTimerRunning = false
         isPaused = false
         btStart.setTitle("Start", for: .normal)
-
     }
-    
-    
     
     
     // ---------- Self function ----------

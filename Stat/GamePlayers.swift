@@ -142,7 +142,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.ftAttempt += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "FTA" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "FTA" + (step ? "" : " X"))
     }
     
     func madeFT(player: Int, isHome: Bool, step: Bool) {
@@ -155,7 +155,7 @@ class GamePlayers {
             guestTeamGameStats[player]?.ftMade += step ? 1 : -1
             guestScores[quarter-1].score += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "FTM" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "FTM" + (step ? "" : " X"))
     }
     
     func incrementDR(player: Int, isHome: Bool, step: Bool) {
@@ -164,7 +164,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.defReb += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "DR" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "DR" + (step ? "" : " X"))
     }
     
     func incrementOR(player: Int, isHome: Bool, step: Bool) {
@@ -173,7 +173,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.offReb += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "OR" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "OR" + (step ? "" : " X"))
     }
     
     func incrementAST(player: Int, isHome: Bool, step: Bool) {
@@ -182,7 +182,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.assist += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "AST" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "AST" + (step ? "" : " X"))
     }
     
     func incrementSTL(player: Int, isHome: Bool, step: Bool) {
@@ -191,7 +191,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.steal += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "STL" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "STL" + (step ? "" : " X"))
     }
     
     func incrementBS(player: Int, isHome: Bool, step: Bool) {
@@ -200,7 +200,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.blockShot += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "BS" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "BS" + (step ? "" : " X"))
     }
     
     func incrementTO(player: Int, isHome: Bool, step: Bool) {
@@ -209,7 +209,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.turnover += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "TO" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "TO" + (step ? "" : " X"))
     }
     
     func incrementPF(player: Int, isHome: Bool, step: Bool) {
@@ -218,7 +218,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.foul += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "PF" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "PF" + (step ? "" : " X"))
     }
     
     func incrementFD(player: Int, isHome: Bool, step: Bool) {
@@ -227,7 +227,7 @@ class GamePlayers {
         } else {
             guestTeamGameStats[player]?.foulDraw += step ? 1 : -1
         }
-        createGameLog(player: player, isHome: isHome, record: "FD" + (step ? "" : " Cancel"))
+        createGameLog(player: player, isHome: isHome, record: "FD" + (step ? "" : " X"))
     }
     
     // Get player stat
